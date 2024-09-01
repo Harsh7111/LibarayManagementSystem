@@ -101,7 +101,7 @@ class Library {
                     books[i].borrowBook();
                     System.out.println("You have successfully borrowed: " + ISBN);
                 } else {
-                    throw new IllegalStateException("Book is already borrowed."); // Ensure this line is present
+                    throw new IllegalStateException("Book is already borrowed."); 
                 }
                 return;
             }
@@ -131,7 +131,7 @@ class Library {
 // Main LibraryManagement Class
 public class LibraryManagementHR {
     private static Scanner scanner = new Scanner(System.in);
-    private Library library = new Library(10);
+    private Library library = new Library(10); // Maximum book  is 10
     
     //Adding details of book  
     public void addBooksFun(int numberOfBooks) {
